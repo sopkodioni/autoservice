@@ -1,0 +1,51 @@
+.understand{
+    background-color: $bgColor;
+    padding: 115px 0;
+    color: $whiteColor;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content > *:not(:last-child){
+        margin-bottom: 40px;
+        max-width: 500px;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: calc(45/30);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    &__text{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: calc(22/15);
+        letter-spacing: 0.23em;
+        color: $grayColor;
+    }
+
+    &__link{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(27/18);
+        letter-spacing: 0.15em;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+    }
+
+    &__image{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+        width: 513px;
+        height: 342px;
+    }
+}

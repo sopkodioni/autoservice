@@ -1,0 +1,25 @@
+.hero{
+    min-height: 750px;
+    background-image: url('../img/hero/heroBg.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container{
+        padding: 250px 15px 150px 15px;
+        min-height: 750px;
+        position: relative;
+    }
+
+    &__content{
+        max-width: 790px;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: calc(72 / 48);
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+}

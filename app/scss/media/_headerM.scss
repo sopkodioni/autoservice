@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .header{
+        min-height: 80px;
+    }
+    
+    .logo{
+        width: 100px;
+    }
+    
+    // Hide navigation and language select
+    .header__nav, .header__lang{
+        display: none;
+    }
+
+    // Show burger button
+    .nav-btn{
+        display: block;
+    }
+}

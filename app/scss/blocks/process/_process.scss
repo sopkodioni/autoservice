@@ -1,0 +1,27 @@
+.process{
+    color: $blackColor;
+
+    &__container{
+        padding: 100px 15px;
+    }
+
+    &__head{
+        margin-bottom: 90px;
+        text-align: center;
+    }
+
+    &__title{
+        font-weight: 900;
+        font-size: 148px;
+        line-height: calc(222/148);
+        text-transform: uppercase
+    }
+
+    &__subtitle{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: calc(60/40);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+}

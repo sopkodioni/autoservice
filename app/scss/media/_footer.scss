@@ -1,0 +1,17 @@
+@media (max-width: 550px) {
+    .footer{
+        min-height: 110px;
+        height: 110px;
+
+        &__container{
+            min-height: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__copyright{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+}

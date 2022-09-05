@@ -1,0 +1,31 @@
+.services{
+    &__container{
+        padding-bottom: 100px;
+    }
+    
+    &__head{
+        margin-bottom: 60px;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: calc(45/30);
+        letter-spacing: 0.15em;
+        color: $blackColor;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__link{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: calc(22/15);
+        letter-spacing: 0.15em;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: $blackColor;
+    }
+}
+
+@import './services-blocks';

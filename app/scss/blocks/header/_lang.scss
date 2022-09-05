@@ -1,0 +1,19 @@
+.lang{
+    &__item{
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $grayColor;
+        cursor: pointer;
+        transition: color .3s ease;
+        padding: 4px;
+
+        &:hover{
+            color: $whiteColor;
+        }
+
+        &--active{
+            color: $whiteColor;
+            cursor: default;
+        }
+    }
+}

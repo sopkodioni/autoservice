@@ -1,0 +1,93 @@
+.services-blocks{
+    &__item{
+        padding: 0;
+        box-shadow: none;
+        min-height: 540px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:hover{
+            .services-blocks__item-wrap{
+                opacity: 1;
+            }
+
+            .services-blocks__item-text{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &__item-wrap{
+        position: relative;
+        padding: 30px;
+        background-color: rgba($blackColor, 0.7);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        // For hover
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+
+    &__item-content{
+        background-repeat: no-repeat;
+        background-position:  center;
+        background-size: cover;
+        height: 100%;
+    }
+
+    &__item-plus{
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%,-50%);
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        background-color: $secondaryColor;
+        border: 1px solid $secondaryColor;
+        border-radius: 50%;
+        transition: background .3s ease-in-out;
+        cursor: pointer;
+        margin-bottom: 60px;
+
+        &:hover{
+            background-color: transparent;
+        }
+    }
+    &__item-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    &__item-text{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: calc(27/18);
+        letter-spacing: 0.23em;
+        max-width: 270px;
+        align-self: flex-start;
+        cursor: default;
+
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity .6s ease-in-out, transform .6s ease-in-out;
+    }
+
+    &__item-title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: calc(30/20);
+        letter-spacing: 0.23em;
+        text-transform: uppercase;
+        color: $blackColor;
+        padding-top: 15px;
+    }
+}

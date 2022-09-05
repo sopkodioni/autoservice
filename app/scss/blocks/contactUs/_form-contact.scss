@@ -1,0 +1,14 @@
+.form-contact{
+    max-width: 440px;
+
+    &__row{ 
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__btn{
+        text-transform: uppercase;
+    }
+}
