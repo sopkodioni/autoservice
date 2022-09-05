@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Car Service</title>
+</head>
+<body>
+    <div class="modals">
+        <div class="modals__container feedback-request feedback-modal" data-modal-target="feedback-request">
+            <button class="modals__close btn-reset"></button>
+            <div class="modals__content">
+                <h2 class="feedback-modal__title">Free appoitmet</h2>
+                
+                <form class="feedback-request__form form" method="">
+                    <!-- Input user phone -->
+                    <div class="form-wrap-control feedback-request__control">
+                        <input type="tel" name="user_phone" autocomplete="off" required>
+                        <label for="user_phone" class="control-label">
+                            <span class="control-label__content">Phone</span>
+                        </label>
+                    </div>
+
+                    <!-- Input user name -->
+                    <div class="form-wrap-control feedback-request__control">
+                        <input type="text" name="user_name" autocomplete="off" required>
+                        <label for="user_name" class="control-label">
+                            <span class="control-label__content">Name</span>
+                        </label>
+                    </div>
+
+                    <!-- Select car brand -->
+                    <div class="dropdown dropdown-brand feedback-request__control">
+                        
+                    </div>
+                    <!-- Select car models -->
+                    <div class="dropdown dropdown-models feedback-request__control">
+                        <div class="dropdown__button disable" data-type="btn">Models</div>
+                        <ul class="dropdown__list">
+                        </ul>
+                        <input class="dropdown__input" type="text" value="" name="brand-car">
+                    </div>
+
+                    <!-- Textarea MESSAGE -->
+                    <div class="form-wrap-control feedback-request__message feedback-request__control">
+                        <textarea name="user_name" autocomplete="off" required ></textarea>
+                        <!-- <input type="text" name="user_name" autocomplete="off" required> -->
+                        <label for="user_name" class="control-label">
+                            <span class="control-label__content">Message</span>
+                        </label>
+                    </div>
+
+                    <button class="btn feedback-request__btn">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="modals__container feedback-map feedback-modal" data-modal-target="feedback-map">
+            <button class="modals__close btn-reset"></button>
+            <div class="modals__content">
+                <h2 class="feedback-modal__title">We on the map</h2>
+
+                <div class="feedback-map__iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.69294014736!2d30.25182632073484!3d50.40213510689456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1662276218908!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header fix-block">
+        <div class="header__container container">
+            <div class="header__logo logo">
+                <a class="logo__link">
+                    <img src="./img/header/logo.svg" alt="Logo company cars" class="logo__img">
+                </a>
+            </div>
+
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link nav__link--active">Main</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Our services</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__lang lang">
+                <span class="lang__item">Ua</span>
+                <span class="lang__item lang__item--active">En</span>
+            </div>
+
+            <a href="#" class="nav-btn">
+                <span class="nav-btn__item"></span>
+                <span class="nav-btn__item"></span>
+                <span class="nav-btn__item"></span>
+            </a>
+
+            <div class="header__mobile-menu mobile-menu ">
+                <div class="mobile-menu__close"></div>
+
+                <header class="mobile-menu__header">
+                    <div class="mobile-menu__logo logo">
+                        <a class="logo__link">
+                            <img src="./img/header/logo.svg" alt="Logo company cars" class="logo__img">
+                        </a>
+                    </div>
+                </header>
+
+
+                <nav class="mobile-menu__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link nav__link--active">Main</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Our services</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu__lang lang">
+                    <span class="lang__item">Ua</span>
+                    <span class="lang__item lang__item--active">En</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Keeping you on the road with service you can trust</h1>
+                    <button class="hero__btn btn btn-reset">Show more</button>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="feedback__container container">
+                <div class="grid-blocks">
+                    <a href="tel:380977777777" class="grid-blocks__item feedback__item">
+                        <svg class="grid-blocks__icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.5928 19.6916C25.7561 19.6916 23.9527 19.4043 22.2437 18.8395C21.4062 18.5539 20.3768 18.8159 19.8657 19.3409L16.4925 21.8873C12.5805 19.7991 10.1709 17.3902 8.11117 13.5076L10.5827 10.2223C11.2248 9.58102 11.4551 8.6443 11.1791 7.76539C10.612 6.04742 10.3238 4.24484 10.3238 2.40734C10.3239 1.07992 9.24398 0 7.91664 0H2.40727C1.07992 0 0 1.07992 0 2.40727C0 17.6221 12.378 30 27.5928 30C28.9202 30 30.0001 28.9201 30.0001 27.5927V22.0988C30 20.7715 28.9201 19.6916 27.5928 19.6916Z"/>
+                        </svg>
+                        <div class="grid-blocks__title">Call us now 222-222-222</div>
+                        <div class="grid-blocks__text">Feel free to call us</div>
+                    </a>
+                    <div class="grid-blocks__item feedback__item" data-modal-path="feedback-request" data-animation="fadeInUp">
+                        <svg class="grid-blocks__icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3_351)">
+                                <path d="M26.4844 2.34375H25.0781V0H22.7344V2.34375H7.26562V0H4.92188V2.34375H3.51562C1.57711 2.34375 0 3.92086 0 5.85938V26.4844C0 28.4229 1.57711 30 3.51562 30H26.4844C28.4229 30 30 28.4229 30 26.4844V5.85938C30 3.92086 28.4229 2.34375 26.4844 2.34375ZM27.6562 26.4844C27.6562 27.1305 27.1305 27.6562 26.4844 27.6562H3.51562C2.86945 27.6562 2.34375 27.1305 2.34375 26.4844V11.0156H27.6562V26.4844ZM27.6562 8.67188H2.34375V5.85938C2.34375 5.2132 2.86945 4.6875 3.51562 4.6875H4.92188V7.03125H7.26562V4.6875H22.7344V7.03125H25.0781V4.6875H26.4844C27.1305 4.6875 27.6562 5.2132 27.6562 5.85938V8.67188Z" />
+                                <path d="M6.79688 13.4766H4.45312V15.8203H6.79688V13.4766Z" />
+                                <path d="M11.4844 13.4766H9.14062V15.8203H11.4844V13.4766Z" />
+                                <path d="M16.1719 13.4766H13.8281V15.8203H16.1719V13.4766Z" />
+                                <path d="M20.8594 13.4766H18.5156V15.8203H20.8594V13.4766Z" />
+                                <path d="M25.5469 13.4766H23.2031V15.8203H25.5469V13.4766Z" />
+                                <path d="M6.79688 18.1641H4.45312V20.5078H6.79688V18.1641Z" />
+                                <path d="M11.4844 18.1641H9.14062V20.5078H11.4844V18.1641Z" />
+                                <path d="M16.1719 18.1641H13.8281V20.5078H16.1719V18.1641Z" />
+                                <path d="M20.8594 18.1641H18.5156V20.5078H20.8594V18.1641Z" />
+                                <path d="M6.79688 22.8516H4.45312V25.1953H6.79688V22.8516Z" />
+                                <path d="M11.4844 22.8516H9.14062V25.1953H11.4844V22.8516Z" />
+                                <path d="M16.1719 22.8516H13.8281V25.1953H16.1719V22.8516Z" />
+                                <path d="M20.8594 22.8516H18.5156V25.1953H20.8594V22.8516Z" />
+                                <path d="M25.5469 18.1641H23.2031V20.5078H25.5469V18.1641Z" />
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3_351">
+                            <rect width="30" height="30"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="grid-blocks__title">Get free appoitmet</div>
+                        <div class="grid-blocks__text">Free Diagnosis & Brake Checks</div>
+                    </div>
+                    <div class="grid-blocks__item feedback__item" data-modal-path="feedback-map" data-animation="fadeInUp">
+                        <svg class="grid-blocks__icon" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.0001 0C5.0092 0 0.135254 4.87394 0.135254 10.8648C0.135254 18.2996 9.85824 29.2144 10.2722 29.6754C10.661 30.1085 11.3399 30.1078 11.728 29.6754C12.142 29.2144 21.865 18.2996 21.865 10.8648C21.8649 4.87394 16.991 0 11.0001 0ZM11.0001 16.3312C7.98594 16.3312 5.53379 13.879 5.53379 10.8648C5.53379 7.85062 7.986 5.39848 11.0001 5.39848C14.0142 5.39848 16.4664 7.85068 16.4664 10.8649C16.4664 13.879 14.0142 16.3312 11.0001 16.3312Z" />
+                        </svg>
+                            
+                        <div class="grid-blocks__title">Find us on map</div>
+                        <div class="grid-blocks__text">New York, 1286 Ruumu Nanor</div>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <section class="services">
+            <div class="services__container container">
+                <div class="services__head">
+                    <h2 class="services__title">Our services</h2>
+                    <a href="" class="services__link">View all services</a>
+                </div>
+
+                <div class="grid-blocks services-blocks">
+                    <div class="grid-blocks__item services-blocks__item">
+                        <div class="services-blocks__item-content" style="background-image: url(./img/services/diagnostic.jpg)">
+                            <div class="services-blocks__item-wrap">
+                                <div class="services-blocks__item-plus">
+                                    <img class="services-blocks__item-icon" src="img/svg/plus.svg" alt="plus">
+                                </div>
+                                <p class="services-blocks__item-text">ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH</p>
+                            </div>
+                        </div>
+                        <a href="#" class="services-blocks__item-title">Diagnostic</a>
+                    </div>
+                    <div class="grid-blocks__item services-blocks__item">
+                        <div class="services-blocks__item-content" style="background-image: url(./img/services/whells.jpg)">
+                            <div class="services-blocks__item-wrap">
+                                <div class="services-blocks__item-plus">
+                                    <img class="services-blocks__item-icon" src="img/svg/plus.svg" alt="plus">
+                                </div>
+                                <p class="services-blocks__item-text">ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH</p>
+                            </div>
+                        </div>
+                        <a href="#" class="services-blocks__item-title">Tires & Whells</a>
+                    </div>
+                    <div class="grid-blocks__item services-blocks__item">
+                        <div class="services-blocks__item-content" style="background-image: url(./img/services/engines.jpg)">
+                            <div class="services-blocks__item-wrap">
+                                <div class="services-blocks__item-plus">
+                                    <img class="services-blocks__item-icon" src="img/svg/plus.svg" alt="plus">
+                                </div>
+                                <p class="services-blocks__item-text">ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH</p>
+                            </div>
+                        </div>
+                        <a href="#" class="services-blocks__item-title">Engines</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="understand">
+            <div class="understand__container container">
+                <div class="understand__content">
+                    <h3 class="understand__title">
+                        We understand how important it is to find the right auto service
+                    </h3>
+                    <p class="understand__text">
+                        Car repairs and maintenance can be expensive and no one wants to have pay to repair damage caused by shoddy repair service. When you bring your car into our auto shop, you won&#700;t have to worry because our staff is comprised of ASE certified technicians who are committed to making sure you have a safe dependable car.
+                    </p>
+                    <a href="#" class="understand__link">More about us</a>
+                </div>
+                <div class="understand__image" style="background-image: url('./img/understand/motor.jpg')"></div>
+            </div>
+        </section>
+        <section class="process">
+            <div class="process__container container">
+                <div class="process__head">
+                    <h2 class="process__title">Fast &amp; Easy</h2>
+                    <h4 class="process__subtitle">Our work process</h2>
+                </div>
+
+                <div class="grid-blocks">
+                    <div class="grid-blocks__item process__item">
+                        <div class="grid-blocks__title">1.Request your quote</div>
+                        <div class="grid-blocks__text">We will be there when you most need us</div>
+                    </div>
+                    <div class="grid-blocks__item process__item">
+                        <div class="grid-blocks__title">02. Bring your vehicle</div>
+                        <div class="grid-blocks__text">We are car guys at heart</div>
+                    </div>
+                    <div class="grid-blocks__item process__item">
+                        <div class="grid-blocks__title">03. Get it repaired</div>
+                        <div class="grid-blocks__text">High quality, low cost car servicing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="contact-us__container container">
+                <h2 class="contact-us__title title">Contact Us</h2>
+
+                <form action="" class="contact-us__form form-contact">
+                    <div class="form-contact__name form-contact__row">
+                        <div class="form-wrap-control">
+                            <input type="tel" name="user_name" autocomplete="off" required>
+                            <label for="user_name" class="control-label">
+                                <span class="control-label__content">Name</span>
+                            </label>
+                        </div>
+                        <div class="form-wrap-control">
+                            <input type="tel" name="user_lastname" autocomplete="off" required>
+                            <label for="user_lastname" class="control-label">
+                                <span class="control-label__content">Last name</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-contact__contacts form-contact__row">
+                        <div class="form-wrap-control ">
+                            <input type="tel" name="user_email" autocomplete="off" required>
+                            <label for="user_email" class="control-label">
+                                <span class="control-label__content">Email</span>
+                            </label>
+                        </div>
+                        <div class="form-wrap-control">
+                            <input type="tel" name="user_phone" autocomplete="off" required>
+                            <label for="user_phone" class="control-label">
+                                <span class="control-label__content">Phone</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-contact__row">
+                        <div class="form-wrap-control form-wrap-control__textarea">
+                            <textarea name="user_name" autocomplete="off" required ></textarea>
+                            <!-- <input type="text" name="user_name" autocomplete="off" required> -->
+                            <label for="user_name" class="control-label">
+                                <span class="control-label__content">Message</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn form-contact__btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <h6 class="footer__copyright">
+                &copy; 2021 Auto theme by Frontend Tricks
+            </h6>
+
+            <div class="footer__socials">
+                <a href="#" class="footer__link">
+                    <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 0C5.5975 0 0 5.5975 0 12.5C0 19.4025 5.5975 25 12.5 25C19.4025 25 25 19.4025 25 12.5C25 5.5975 19.4025 0 12.5 0ZM8.86765 18.8965H5.82333V9.73759H8.86765V18.8965ZM7.34558 8.48694H7.32574C6.30417 8.48694 5.64346 7.7837 5.64346 6.90479C5.64346 6.00605 6.32439 5.32227 7.3658 5.32227C8.40721 5.32227 9.04808 6.00605 9.06792 6.90479C9.06792 7.7837 8.40721 8.48694 7.34558 8.48694ZM19.8448 18.8965H16.8009V13.9967C16.8009 12.7653 16.3601 11.9255 15.2586 11.9255C14.4176 11.9255 13.9168 12.492 13.6967 13.0388C13.6162 13.2345 13.5965 13.508 13.5965 13.7817V18.8965H10.5524C10.5524 18.8965 10.5923 10.5968 10.5524 9.73759H13.5965V11.0344C14.0011 10.4103 14.7249 9.52263 16.3401 9.52263C18.343 9.52263 19.8448 10.8316 19.8448 13.6448V18.8965Z"/>
+                    </svg>
+                </a>
+                <a href="#" class="footer__link">
+                    <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 12.5C25 5.5957 19.4043 0 12.5 0C5.5957 0 0 5.5957 0 12.5C0 19.4043 5.5957 25 12.5 25C12.5732 25 12.6465 25 12.7197 24.9951V15.2686H10.0342V12.1387H12.7197V9.83398C12.7197 7.16309 14.3506 5.70801 16.7334 5.70801C17.876 5.70801 18.8574 5.79102 19.1406 5.83008V8.62305H17.5C16.2061 8.62305 15.9521 9.23828 15.9521 10.1416V12.1338H19.0527L18.6475 15.2637H15.9521V24.5166C21.1768 23.0176 25 18.208 25 12.5Z"/>
+                    </svg>
+                </a>
+                <a href="#" class="footer__link">
+                    <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_8_780)">
+                            <path d="M14.8926 12.5C14.8926 13.8214 13.8214 14.8926 12.5 14.8926C11.1786 14.8926 10.1074 13.8214 10.1074 12.5C10.1074 11.1786 11.1786 10.1074 12.5 10.1074C13.8214 10.1074 14.8926 11.1786 14.8926 12.5Z" />
+                            <path d="M18.0954 8.26691C17.9804 7.95525 17.7969 7.67316 17.5585 7.4416C17.327 7.20319 17.0451 7.0197 16.7332 6.90469C16.4803 6.80646 16.1003 6.68954 15.4005 6.65768C14.6435 6.62316 14.4165 6.61572 12.5 6.61572C10.5833 6.61572 10.3564 6.62297 9.59953 6.65749C8.89972 6.68954 8.51958 6.80646 8.26686 6.90469C7.95501 7.0197 7.67291 7.20319 7.44155 7.4416C7.20313 7.67316 7.01965 7.95506 6.90444 8.26691C6.80621 8.51983 6.68929 8.89996 6.65744 9.59977C6.62292 10.3566 6.61548 10.5836 6.61548 12.5003C6.61548 14.4168 6.62292 14.6438 6.65744 15.4008C6.68929 16.1006 6.80621 16.4805 6.90444 16.7334C7.01965 17.0453 7.20294 17.3272 7.44136 17.5588C7.67291 17.7972 7.95482 17.9807 8.26667 18.0957C8.51958 18.1941 8.89972 18.311 9.59953 18.3429C10.3564 18.3774 10.5831 18.3846 12.4998 18.3846C14.4167 18.3846 14.6437 18.3774 15.4003 18.3429C16.1002 18.311 16.4803 18.1941 16.7332 18.0957C17.3592 17.8542 17.854 17.3594 18.0954 16.7334C18.1937 16.4805 18.3106 16.1006 18.3426 15.4008C18.3771 14.6438 18.3844 14.4168 18.3844 12.5003C18.3844 10.5836 18.3771 10.3566 18.3426 9.59977C18.3108 8.89996 18.1938 8.51983 18.0954 8.26691ZM12.5 16.1858C10.4643 16.1858 8.81408 14.5358 8.81408 12.5001C8.81408 10.4644 10.4643 8.81432 12.5 8.81432C14.5356 8.81432 16.1858 10.4644 16.1858 12.5001C16.1858 14.5358 14.5356 16.1858 12.5 16.1858ZM16.3315 9.52996C15.8558 9.52996 15.4702 9.14429 15.4702 8.6686C15.4702 8.19291 15.8558 7.80724 16.3315 7.80724C16.8072 7.80724 17.1929 8.19291 17.1929 8.6686C17.1927 9.14429 16.8072 9.52996 16.3315 9.52996Z" />
+                            <path d="M12.5 0C5.5975 0 0 5.5975 0 12.5C0 19.4025 5.5975 25 12.5 25C19.4025 25 25 19.4025 25 12.5C25 5.5975 19.4025 0 12.5 0ZM19.6344 15.4593C19.5997 16.2233 19.4782 16.745 19.3008 17.2016C18.928 18.1658 18.1658 18.928 17.2016 19.3008C16.7452 19.4782 16.2233 19.5995 15.4594 19.6344C14.694 19.6693 14.4495 19.6777 12.5002 19.6777C10.5507 19.6777 10.3064 19.6693 9.54075 19.6344C8.77686 19.5995 8.255 19.4782 7.79858 19.3008C7.31945 19.1206 6.88572 18.8381 6.52714 18.4729C6.16207 18.1145 5.87959 17.6805 5.69935 17.2016C5.52197 16.7452 5.40047 16.2233 5.36575 15.4594C5.33047 14.6938 5.32227 14.4493 5.32227 12.5C5.32227 10.5507 5.33047 10.3062 5.36556 9.54075C5.40028 8.77666 5.52158 8.255 5.69897 7.79839C5.87921 7.31945 6.16188 6.88553 6.52714 6.52714C6.88553 6.16188 7.31945 5.8794 7.79839 5.69916C8.255 5.52177 8.77666 5.40047 9.54075 5.36556C10.3062 5.33066 10.5507 5.32227 12.5 5.32227C14.4493 5.32227 14.6938 5.33066 15.4593 5.36575C16.2233 5.40047 16.745 5.52177 17.2016 5.69897C17.6805 5.87921 18.1145 6.16188 18.4731 6.52714C18.8381 6.88572 19.1208 7.31945 19.3008 7.79839C19.4784 8.255 19.5997 8.77666 19.6346 9.54075C19.6695 10.3062 19.6777 10.5507 19.6777 12.5C19.6777 14.4493 19.6695 14.6938 19.6344 15.4593Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/libs.min.js"></script>
+    <script type="module" src="scripts/main.min.js"></script>
+</body>
+</html>

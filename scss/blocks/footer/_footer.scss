@@ -1,0 +1,45 @@
+.footer{
+    min-height: 150px;
+    height: 150px;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__copyright{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: calc(22/15);
+        letter-spacing: 0.15em;
+        color: $blackColor;
+    }
+
+    &__socials{
+        display: flex;
+    }
+
+    &__link{
+        display: flex;
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+
+        &:hover{
+            svg{
+               transform: scale(1.4) rotate(360deg);
+            }
+        }
+
+        svg{
+            width: 25px;
+            height: 25px;
+            transition: transform .3s ease-in-out;
+           path{
+            fill: black;
+           } 
+        }
+    }
+}

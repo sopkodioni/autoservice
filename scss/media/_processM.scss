@@ -1,0 +1,55 @@
+@media (max-width: 1050px) {
+    .process{
+        &__container{
+            padding: 60px 15px;
+        }
+
+        &__title{
+            font-size: 105px;
+        }
+
+        &__subtitle{
+            font-size: 29px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .process{
+        &__head{
+            margin-bottom: 50px;
+        }
+
+        &__title{
+            font-size: 87px;
+        }
+
+        &__subtitle{
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 588px) {
+    .process{
+        &__title{
+            font-size: 64px;
+        }
+
+        &__subtitle{
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 434px) {
+    .process{
+        &__title{
+            font-size: 45px;
+        }
+
+        &__subtitle{
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: $fontSize;
+    line-height: calc($liheHeight / $fontSize);
+    overflow-anchor: none;
+    color: $whiteColor;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-reset{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+// Макетные настройки ============================================================================================================================
+.container{
+    max-width: 1230px; 
+    margin: 0 auto;
+    padding: 0 15px;
+}

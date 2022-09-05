@@ -1,0 +1,8 @@
+.logo{
+    display: flex;
+
+    transition: transform .3s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
+}

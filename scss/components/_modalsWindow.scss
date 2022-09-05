@@ -1,0 +1,89 @@
+.modals{
+    --transition-time: .3s;
+    position: fixed;
+    z-index: 1000;
+    padding: 0px 20px;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background-color: rgba($blackColor, .5);
+    overflow-x: hidden;
+    text-align: center;
+    transition: opacity var(--transition-time), visibility var(--transition-time);
+    @include flex-all-center;
+
+    opacity: 0;
+    visibility: hidden;
+    &--open{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity var(--transition-time), visibility var(--transition-time);
+    }
+
+    &__close{
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+
+        &::before,
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background-color: $whiteColor;
+            position: absolute;
+        }
+
+        &::before{
+            transform: rotate(45deg);
+        }
+        &::after{
+            transform: rotate(-45deg);
+        }
+    }
+
+    // &::before{
+    //     content: '';
+    //     display: inline-block;
+    //     vertical-align: middle;
+    //     height: 100%;
+    // }
+
+    &__container{
+        position: relative;
+        max-width: 60%;
+        width: 60%;
+        display: none; // inline-block
+        margin: 50px auto;
+        text-align: left;
+        vertical-align: middle;
+        background-color: $bgColor;
+        color: $whiteColor;
+        padding: 20px;
+        cursor: default;
+        &--open{
+            display: inline-block;
+        }
+
+        text-align: center;
+    }
+}
+
+// Animations
+.fade{
+    opacity: 0;
+    transition: opacity var(--transition-time);
+    &--animate-open{
+        opacity: 1;
+        transition: opacity var(--transition-time);
+    }
+}
+
+

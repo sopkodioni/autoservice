@@ -1,0 +1,41 @@
+@import 'mixins';
+@import 'vars';
+@import 'libs';
+@import 'fonts';
+@import 'settings';
+
+// COMPONENTS ---
+@import 'components/form/form';
+
+@import 'components/modalsWindow';
+@import 'components/title';
+@import 'components/button';
+@import 'components/grid-blocks';
+
+// HEADER ===
+@import 'blocks/header/header';
+
+// HERO ===
+@import 'blocks/hero/hero';
+
+// FEEDBACK
+@import 'blocks/feedback/feedback';
+
+// SERVICES
+@import 'blocks/services/services';
+
+// UDERSTAND
+@import 'blocks/understand/understand';
+
+// PROCESS
+@import 'blocks/process/process';
+
+// CONTACT US
+@import 'blocks/contactUs/contactUs';
+
+// FOOTER
+@import 'blocks/footer/footer';
+
+
+
+@import 'media';

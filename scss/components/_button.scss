@@ -1,0 +1,16 @@
+.btn{
+    min-width: 200px;
+    padding: 11px 0;
+    background-color: $secondaryColor;
+    color: $whiteColor;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(27/18);
+    transition: background .3s ease, border-color .3s ease;
+    border: 1px solid transparent;
+
+    &:hover{
+        background-color: transparent;
+        border-color: $secondaryColor;
+    }
+}

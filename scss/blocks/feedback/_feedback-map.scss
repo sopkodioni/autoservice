@@ -1,0 +1,13 @@
+.feedback-map{
+    width: 1000px !important;
+
+    &__iframe{
+        width: 100%;
+        height: 500px;
+
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
